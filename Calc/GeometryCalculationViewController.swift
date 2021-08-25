@@ -107,10 +107,8 @@ class GeometryCalculationViewController: UIViewController {
 extension GeometryCalculationViewController: GeometryCalculationTableViewControllerDelegate {
     func geometryCalculation(figure: Figure) {
         selectedFigure = figure
-        topConstraint.constant = topConstraintConstant ?? 0 
-        UIView.animate(withDuration: 0.3) {
-            self.view.layoutIfNeeded()
-        }
+        topConstraint.constant = topConstraintConstant ?? 0
+
     }
 }
 extension GeometryCalculationViewController: UIPickerViewDataSource, UIPickerViewDelegate {
