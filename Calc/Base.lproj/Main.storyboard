@@ -194,13 +194,29 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="773-bD-AKD">
-                                <rect key="frame" x="3" y="340" width="422" height="207"/>
+                                <rect key="frame" x="3" y="304.66666666666663" width="422" height="277.66666666666663"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="Erh-Rc-9jv">
-                                        <rect key="frame" x="0.0" y="0.0" width="422" height="207"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="422" height="277.66666666666669"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ske-v2-c6q">
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="iFq-jF-H0E">
                                                 <rect key="frame" x="0.0" y="0.0" width="422" height="34"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LdH-de-w1w">
+                                                        <rect key="frame" x="0.0" y="0.0" width="41.333333333333336" height="34"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="asx-4v-LNG">
+                                                        <rect key="frame" x="49.333333333333343" y="0.0" width="372.66666666666663" height="34"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ske-v2-c6q">
+                                                <rect key="frame" x="0.0" y="59" width="422" height="34"/>
                                                 <subviews>
                                                     <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UAH" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o2U-mm-Qva">
                                                         <rect key="frame" x="0.0" y="0.0" width="128.33333333333334" height="34"/>
@@ -208,9 +224,6 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
-                                                        <connections>
-                                                            <outletCollection property="gestureRecognizers" destination="Wvd-0w-2e4" appends="YES" id="Eh1-9L-T9f"/>
-                                                        </connections>
                                                     </label>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EVz-aw-aEo">
                                                         <rect key="frame" x="138.33333333333334" y="0.0" width="283.66666666666663" height="34"/>
@@ -220,7 +233,7 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="roX-Po-4iv">
-                                                <rect key="frame" x="0.0" y="59" width="422" height="34"/>
+                                                <rect key="frame" x="0.0" y="118" width="422" height="34"/>
                                                 <subviews>
                                                     <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USD" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GrL-C0-mhk">
                                                         <rect key="frame" x="0.0" y="0.0" width="128.33333333333334" height="34"/>
@@ -228,9 +241,6 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
-                                                        <connections>
-                                                            <outletCollection property="gestureRecognizers" destination="YZU-PX-ufl" appends="YES" id="EMp-CX-GbX"/>
-                                                        </connections>
                                                     </label>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uUc-lH-a0Y">
                                                         <rect key="frame" x="138.33333333333334" y="0.0" width="283.66666666666663" height="34"/>
@@ -240,23 +250,23 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="7Qz-x4-TS7">
-                                                <rect key="frame" x="0.0" y="118" width="422" height="34"/>
+                                                <rect key="frame" x="0.0" y="177" width="422" height="45.666666666666657"/>
                                                 <subviews>
                                                     <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MHa-i4-pCT">
-                                                        <rect key="frame" x="0.0" y="0.0" width="128.33333333333334" height="34"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="128.33333333333334" height="45.666666666666664"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9SO-Ib-zoa">
-                                                        <rect key="frame" x="138.33333333333334" y="0.0" width="283.66666666666663" height="34"/>
+                                                        <rect key="frame" x="138.33333333333334" y="0.0" width="283.66666666666663" height="45.666666666666664"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                 </subviews>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vcT-CQ-SgI">
-                                                <rect key="frame" x="0.0" y="177" width="422" height="30"/>
+                                                <rect key="frame" x="0.0" y="247.66666666666669" width="422" height="30"/>
                                                 <color key="backgroundColor" systemColor="systemGray2Color"/>
                                                 <state key="normal" title="Calculate"/>
                                                 <connections>
@@ -291,23 +301,12 @@
                         <outlet property="priceLabel" destination="MHa-i4-pCT" id="TMw-cC-Qzm"/>
                         <outlet property="resultTextField" destination="9SO-Ib-zoa" id="rod-Sx-Gre"/>
                         <outlet property="secondLabel" destination="GrL-C0-mhk" id="Obz-Ex-mK3"/>
+                        <outlet property="selectedCurencyTextField" destination="asx-4v-LNG" id="wi1-AL-ZTU"/>
                         <outlet property="uahTextField" destination="EVz-aw-aEo" id="uFL-Ld-mn8"/>
                         <outlet property="usdTextField" destination="uUc-lH-a0Y" id="Ymm-6g-ATU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VI0-G2-5MK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="Wvd-0w-2e4">
-                    <connections>
-                        <action selector="labelTapped:" destination="5NH-lh-wGJ" id="5rf-sL-T0f"/>
-                        <outlet property="delegate" destination="o2U-mm-Qva" id="9XO-dZ-dGK"/>
-                    </connections>
-                </tapGestureRecognizer>
-                <tapGestureRecognizer id="YZU-PX-ufl">
-                    <connections>
-                        <action selector="labelTapped:" destination="5NH-lh-wGJ" id="MC5-by-gkq"/>
-                        <outlet property="delegate" destination="GrL-C0-mhk" id="OUf-NS-62Y"/>
-                    </connections>
-                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-628.03738317757006" y="338.87688984881214"/>
         </scene>

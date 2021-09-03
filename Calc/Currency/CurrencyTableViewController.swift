@@ -15,7 +15,7 @@ protocol CurrencyTableViewControllerDelegate: class {
 
 class CurrencyTableViewController: UITableViewController {
     
-    var delegate: CurrencyTableViewControllerDelegate?
+    weak var delegate: CurrencyTableViewControllerDelegate?
     let isoCurrencyCodes = NSLocale.isoCurrencyCodes
     
     let reuseIdentifier = "reuseIdentifier"
