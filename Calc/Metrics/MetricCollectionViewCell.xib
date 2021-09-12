@@ -18,29 +18,31 @@
                 <rect key="frame" x="0.0" y="0.0" width="354" height="355"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imageGiri" translatesAutoresizingMaskIntoConstraints="NO" id="DFJ-5A-7YH">
-                        <rect key="frame" x="57" y="113.5" width="240" height="128"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" semanticContentAttribute="forceRightToLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imageGiri" translatesAutoresizingMaskIntoConstraints="NO" id="DFJ-5A-7YH">
+                        <rect key="frame" x="102" y="142.5" width="150" height="70"/>
                         <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="128" id="PbJ-Ci-QPi"/>
-                            <constraint firstAttribute="width" constant="240" id="s2E-0Y-OXP"/>
+                            <constraint firstAttribute="height" constant="70" id="PbJ-Ci-QPi"/>
+                            <constraint firstAttribute="width" constant="150" id="s2E-0Y-OXP"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zz3-9q-htn">
-                        <rect key="frame" x="15" y="276" width="324" height="36"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zz3-9q-htn">
+                        <rect key="frame" x="15" y="227.5" width="324" height="29"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="Zz3-9q-htn" firstAttribute="top" secondItem="DFJ-5A-7YH" secondAttribute="bottom" constant="34.5" id="00l-Os-CwW"/>
+                    <constraint firstItem="Zz3-9q-htn" firstAttribute="top" secondItem="DFJ-5A-7YH" secondAttribute="bottom" constant="15" id="00l-Os-CwW"/>
                     <constraint firstItem="Zz3-9q-htn" firstAttribute="leading" secondItem="HF6-9I-kjc" secondAttribute="leading" constant="15" id="72e-il-ot2"/>
                     <constraint firstItem="DFJ-5A-7YH" firstAttribute="centerX" secondItem="HF6-9I-kjc" secondAttribute="centerX" id="Ct6-f4-sXk"/>
                     <constraint firstItem="DFJ-5A-7YH" firstAttribute="centerY" secondItem="HF6-9I-kjc" secondAttribute="centerY" id="UBq-2N-8sn"/>
                     <constraint firstAttribute="trailing" secondItem="Zz3-9q-htn" secondAttribute="trailing" constant="15" id="gmQ-YS-P5D"/>
                 </constraints>
             </collectionViewCellContentView>
+            <color key="backgroundColor" systemColor="systemGray3Color"/>
+            <color key="tintColor" systemColor="labelColor"/>
             <size key="customSize" width="354" height="355"/>
             <connections>
                 <outlet property="metricView" destination="DFJ-5A-7YH" id="a2U-py-5bX"/>
@@ -51,8 +53,14 @@
     </objects>
     <resources>
         <image name="imageGiri" width="170.5" height="170.5"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="secondarySystemBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

@@ -71,10 +71,10 @@ class ViewController: UIViewController {
     //MARK: - LifeCyvle
     override func viewDidLoad() {
         super.viewDidLoad()
-        button1.layer.cornerRadius = 15
-        button1.setTitleColor(.black, for: .normal)
-        button1.setTitleColor(.red, for: .highlighted)
-       
+//        button1.layer.cornerRadius = 15
+//        button1.setTitleColor(.black, for: .normal)
+//        button1.setTitleColor(.red, for: .highlighted)
+//       
         // Do any additional setup after loading the view.
     }
     

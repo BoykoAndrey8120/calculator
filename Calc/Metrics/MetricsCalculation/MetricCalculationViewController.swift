@@ -21,6 +21,7 @@ class MetricCalculationViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var firstLabel: UILabel!
     @IBOutlet weak var secondLabel: UILabel!
     @IBOutlet weak var fristTextField: UITextField!
+    
     var lasEditedTextField: UITextField?
     
     

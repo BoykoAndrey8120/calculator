@@ -26,12 +26,19 @@ class Figure {
     }
 }
 class Formula {
+    enum nameOfFormula: String {
+        case Square = "Square"
+        case Area = "Area"
+        case Lenght = "Lenght"
+    }
     var name: String
+    var shotName: String
     var fields: [FieldInfo]
     var formula: String
 
-    init(name: String, fields: [FieldInfo], formula: String) {
+    init(name: String, shotName: String, fields: [FieldInfo], formula: String) {
         self.name = name
+        self.shotName = shotName
         self.fields = fields
         self.formula = formula
     }

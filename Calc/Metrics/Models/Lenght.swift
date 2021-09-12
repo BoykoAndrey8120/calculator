@@ -46,33 +46,6 @@ enum Lenght: String, ToBaseConvertable, CaseIterable {
         }
     }
 }
-
-//enum Mass: String, ToBaseConvertable, CaseIterable {
-//
-//    case kilogram
-//    case gram
-//    case ton
-//    case centner
-//    case pound
-//    case ounce
-//
-//    func toBase() -> Double {
-//        switch self {
-//        case .kilogram:
-//            return 1
-//        case .gram:
-//            return 0.001
-//        case .ton:
-//            return 1000
-//        case .centner:
-//            return 100
-//        case .pound:
-//            return 0.45359237
-//        case .ounce:
-//            return 0.0283495231
-//        }
-//    }
-//}
 enum Mass: String, ToBaseConvertable, CaseIterable {
     
     case kilogram

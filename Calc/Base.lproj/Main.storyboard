@@ -202,14 +202,14 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="iFq-jF-H0E">
                                                 <rect key="frame" x="0.0" y="0.0" width="422" height="34"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LdH-de-w1w">
-                                                        <rect key="frame" x="0.0" y="0.0" width="41.333333333333336" height="34"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Currencies" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LdH-de-w1w">
+                                                        <rect key="frame" x="0.0" y="0.0" width="128.33333333333334" height="34"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="asx-4v-LNG">
-                                                        <rect key="frame" x="49.333333333333343" y="0.0" width="372.66666666666663" height="34"/>
+                                                        <rect key="frame" x="136.33333333333334" y="0.0" width="285.66666666666663" height="34"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
@@ -252,7 +252,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="7Qz-x4-TS7">
                                                 <rect key="frame" x="0.0" y="177" width="422" height="45.666666666666657"/>
                                                 <subviews>
-                                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MHa-i4-pCT">
+                                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exchange  Rates" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MHa-i4-pCT">
                                                         <rect key="frame" x="0.0" y="0.0" width="128.33333333333334" height="45.666666666666664"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
@@ -290,9 +290,10 @@
                             <constraint firstItem="o2U-mm-Qva" firstAttribute="width" relation="greaterThanOrEqual" secondItem="Clg-oL-rOh" secondAttribute="width" multiplier="0.3" id="Ev6-t1-4Lc"/>
                             <constraint firstItem="GrL-C0-mhk" firstAttribute="width" relation="greaterThanOrEqual" secondItem="Clg-oL-rOh" secondAttribute="width" multiplier="0.3" id="Pv3-45-3z8"/>
                             <constraint firstItem="hxo-3i-WJg" firstAttribute="trailing" secondItem="773-bD-AKD" secondAttribute="trailing" constant="3" id="R5B-4a-UxG"/>
-                            <constraint firstItem="MHa-i4-pCT" firstAttribute="width" relation="greaterThanOrEqual" secondItem="Clg-oL-rOh" secondAttribute="width" multiplier="0.3" id="Zby-fV-r1e"/>
+                            <constraint firstItem="MHa-i4-pCT" firstAttribute="width" secondItem="Clg-oL-rOh" secondAttribute="width" multiplier="0.3" priority="900" id="Zby-fV-r1e"/>
                             <constraint firstItem="773-bD-AKD" firstAttribute="centerY" secondItem="hxo-3i-WJg" secondAttribute="centerY" id="fQ8-26-opV"/>
                             <constraint firstItem="773-bD-AKD" firstAttribute="leading" secondItem="hxo-3i-WJg" secondAttribute="leading" constant="3" id="ggm-MH-Cmw"/>
+                            <constraint firstItem="LdH-de-w1w" firstAttribute="width" relation="greaterThanOrEqual" secondItem="Clg-oL-rOh" secondAttribute="width" multiplier="0.3" id="r9x-99-cvI"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Currency Converter" image="repeat" catalog="system" id="0nV-4G-dB5"/>
@@ -398,9 +399,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cqp-Ey-7kd">
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="anP-O7-JUB">
+                                <rect key="frame" x="0.0" y="-107" width="428" height="1140"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yfH-1J-x2B">
+                                        <rect key="frame" x="10" y="1067" width="408" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="zg6-Z6-k36" firstAttribute="trailing" secondItem="yfH-1J-x2B" secondAttribute="trailing" constant="10" id="Qc7-Wo-svF"/>
+                                    <constraint firstItem="yfH-1J-x2B" firstAttribute="leading" secondItem="zg6-Z6-k36" secondAttribute="leading" constant="10" id="l43-DO-Rlg"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="1XX-98-rjG"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="zg6-Z6-k36"/>
+                            </scrollView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="1xv-Az-7b8">
                                 <rect key="frame" x="168" y="94.666666666666657" width="240" height="217"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" secondItem="1xv-Az-7b8" secondAttribute="height" multiplier="12:11" id="PJ6-4t-isQ"/>
                                     <constraint firstAttribute="width" constant="240" id="Q65-5a-I5o"/>
                                     <constraint firstAttribute="height" constant="220" id="Sqe-Vc-2dZ"/>
                                 </constraints>
@@ -415,6 +438,18 @@
                                     <outletCollection property="gestureRecognizers" destination="lEz-d9-BgH" appends="YES" id="eFk-5v-j9T"/>
                                 </connections>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="fgQ-qv-HOv">
+                                <rect key="frame" x="20" y="489.66666666666674" width="388" height="353.33333333333326"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4hi-30-2FQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="388" height="353.33333333333331"/>
+                                        <state key="normal" title="Calculate"/>
+                                        <connections>
+                                            <action selector="tapCalculate:" destination="Ge8-cZ-Prb" eventType="touchUpInside" id="Dh6-bZ-2Jc"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="2RS-Dw-TdG">
                                 <rect key="frame" x="20" y="363" width="388" height="60"/>
                                 <subviews>
@@ -430,18 +465,6 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                </subviews>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="fgQ-qv-HOv">
-                                <rect key="frame" x="20" y="489.66666666666674" width="388" height="353.33333333333326"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4hi-30-2FQ">
-                                        <rect key="frame" x="0.0" y="0.0" width="388" height="353.33333333333331"/>
-                                        <state key="normal" title="Calculate"/>
-                                        <connections>
-                                            <action selector="tapCalculate:" destination="Ge8-cZ-Prb" eventType="touchUpInside" id="Dh6-bZ-2Jc"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="F3l-BJ-URG">
@@ -465,13 +488,18 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="4eu-xK-xJR" firstAttribute="trailing" secondItem="F3l-BJ-URG" secondAttribute="trailing" constant="20" id="0pI-LQ-CEg"/>
+                            <constraint firstAttribute="bottom" secondItem="cqp-Ey-7kd" secondAttribute="bottom" id="2qz-a1-HfP"/>
                             <constraint firstItem="fgQ-qv-HOv" firstAttribute="leading" secondItem="4eu-xK-xJR" secondAttribute="leading" constant="20" id="3WK-r3-DrZ"/>
                             <constraint firstItem="F3l-BJ-URG" firstAttribute="leading" secondItem="4eu-xK-xJR" secondAttribute="leading" constant="20" id="BJK-ST-rNh"/>
+                            <constraint firstItem="1xv-Az-7b8" firstAttribute="width" secondItem="zVD-OV-VRs" secondAttribute="height" multiplier="120:463" id="Bsn-iA-b4x"/>
+                            <constraint firstItem="cqp-Ey-7kd" firstAttribute="top" secondItem="zVD-OV-VRs" secondAttribute="top" id="C5u-v4-Kyw"/>
                             <constraint firstItem="1xv-Az-7b8" firstAttribute="leading" secondItem="eVU-zZ-ONi" secondAttribute="trailing" constant="23" id="E8h-Er-bdP"/>
+                            <constraint firstItem="cqp-Ey-7kd" firstAttribute="trailing" secondItem="4eu-xK-xJR" secondAttribute="trailing" id="FAi-kI-9GO"/>
                             <constraint firstItem="4eu-xK-xJR" firstAttribute="trailing" secondItem="1xv-Az-7b8" secondAttribute="trailing" constant="20" id="KYZ-rX-7ue"/>
                             <constraint firstItem="4eu-xK-xJR" firstAttribute="bottom" secondItem="fgQ-qv-HOv" secondAttribute="bottom" id="Koy-sv-CZ3"/>
                             <constraint firstItem="2RS-Dw-TdG" firstAttribute="top" secondItem="1xv-Az-7b8" secondAttribute="bottom" constant="50" id="P2F-tr-5lQ"/>
                             <constraint firstItem="eVU-zZ-ONi" firstAttribute="leading" secondItem="4eu-xK-xJR" secondAttribute="leading" constant="5" id="QzQ-vl-3Ts"/>
+                            <constraint firstItem="cqp-Ey-7kd" firstAttribute="leading" secondItem="4eu-xK-xJR" secondAttribute="leading" id="S4Z-ql-tQf"/>
                             <constraint firstItem="4eu-xK-xJR" firstAttribute="trailing" secondItem="2RS-Dw-TdG" secondAttribute="trailing" constant="20" id="cZR-SY-64V"/>
                             <constraint firstItem="4eu-xK-xJR" firstAttribute="trailing" secondItem="fgQ-qv-HOv" secondAttribute="trailing" constant="20" id="e2X-nE-Zez"/>
                             <constraint firstItem="fgQ-qv-HOv" firstAttribute="top" secondItem="2RS-Dw-TdG" secondAttribute="bottom" constant="66.666666666666686" id="fso-LQ-If0"/>
@@ -488,6 +516,7 @@
                         <outlet property="label" destination="mow-mb-Xx8" id="RPS-6R-hbG"/>
                         <outlet property="resultLabel" destination="XEo-ZN-tRZ" id="I4v-sA-0UA"/>
                         <outlet property="stackView" destination="fgQ-qv-HOv" id="8UB-9m-1mF"/>
+                        <outlet property="testTextField" destination="yfH-1J-x2B" id="HUO-Zc-bfJ"/>
                         <outlet property="textFieldPicker" destination="JDs-fD-OtI" id="rO6-Ey-GGB"/>
                         <outlet property="topConstraint" destination="ssN-6Q-RUz" id="nCM-2e-g0d"/>
                         <outlet property="typeLabel" destination="rcR-CP-omY" id="Pvw-n7-h14"/>
@@ -501,7 +530,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-2456" y="-1379"/>
+            <point key="canvasLocation" x="-2456.0747663551401" y="-1379.4816414686827"/>
         </scene>
         <!--Geometry Select TableVC-->
         <scene sceneID="Gef-rS-Exh">
@@ -604,7 +633,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="IMO-fX-6hf">
                                                 <rect key="frame" x="0.0" y="84.000000000000057" width="214.66666666666666" height="64.333333333333314"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l1S-aS-u22">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l1S-aS-u22" customClass="CalcButton" customModule="Calc" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="58.333333333333336" height="64.333333333333329"/>
                                                         <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                                         <state key="normal" title="4">
@@ -614,7 +643,7 @@
                                                             <action selector="buttenTaped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jSP-JB-CP9"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8tQ-Vc-yt0">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8tQ-Vc-yt0" customClass="CalcButton" customModule="Calc" customModuleProvider="target">
                                                         <rect key="frame" x="78.333333333333329" y="0.0" width="57.999999999999986" height="64.333333333333329"/>
                                                         <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                                         <state key="normal" title="5">
@@ -624,7 +653,7 @@
                                                             <action selector="buttenTaped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="G5t-RN-GWT"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0oc-oX-83b">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0oc-oX-83b" customClass="CalcButton" customModule="Calc" customModuleProvider="target">
                                                         <rect key="frame" x="156.33333333333334" y="0.0" width="58.333333333333343" height="64.333333333333329"/>
                                                         <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                                         <state key="normal" title="6">
@@ -639,7 +668,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="s4M-5l-oCv">
                                                 <rect key="frame" x="0.0" y="168.33333333333331" width="214.66666666666666" height="64"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Vz-Nd-3By">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Vz-Nd-3By" customClass="CalcButton" customModule="Calc" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="58.333333333333336" height="64"/>
                                                         <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                                         <state key="normal" title="7">
@@ -649,7 +678,7 @@
                                                             <action selector="buttenTaped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="emg-qy-eRg"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6QS-kf-pSt">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6QS-kf-pSt" customClass="CalcButton" customModule="Calc" customModuleProvider="target">
                                                         <rect key="frame" x="78.333333333333329" y="0.0" width="57.999999999999986" height="64"/>
                                                         <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                                         <state key="normal" title="8">
@@ -659,7 +688,7 @@
                                                             <action selector="buttenTaped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zsR-mp-B9F"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qbh-Bh-iKF">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qbh-Bh-iKF" customClass="CalcButton" customModule="Calc" customModuleProvider="target">
                                                         <rect key="frame" x="156.33333333333334" y="0.0" width="58.333333333333343" height="64"/>
                                                         <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                                         <state key="normal" title="9">
@@ -674,7 +703,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="vjK-RQ-1nM">
                                                 <rect key="frame" x="0.0" y="252.33333333333334" width="214.66666666666666" height="64.333333333333343"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AMw-Vr-OSs">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AMw-Vr-OSs" customClass="CalcButton" customModule="Calc" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="64.333333333333329" height="64.333333333333329"/>
                                                         <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                                         <constraints>
@@ -687,7 +716,7 @@
                                                             <action selector="buttenTaped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bOP-Vs-p46"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g4R-Bc-Pg9">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g4R-Bc-Pg9" customClass="CalcButton" customModule="Calc" customModuleProvider="target">
                                                         <rect key="frame" x="84.333333333333329" y="0.0" width="130.33333333333337" height="64.333333333333329"/>
                                                         <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                                         <state key="normal" title="0">
@@ -707,7 +736,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="V3G-kB-mXz">
                                                 <rect key="frame" x="0.0" y="0.0" width="148.33333333333334" height="64"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dk8-zn-pY9">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dk8-zn-pY9" customClass="CalcOperationButton" customModule="Calc">
                                                         <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
                                                         <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                                         <constraints>
@@ -720,7 +749,7 @@
                                                             <action selector="buttenTaped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dT8-NE-YMg"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VCB-ZX-D3I">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VCB-ZX-D3I" customClass="CalcOperationButton" customModule="Calc" customModuleProvider="target">
                                                         <rect key="frame" x="84" y="0.0" width="64.333333333333314" height="64"/>
                                                         <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                                         <state key="normal" title="+">
@@ -735,7 +764,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="iIV-hp-Sq7">
                                                 <rect key="frame" x="0.0" y="84.000000000000057" width="148.33333333333334" height="64.333333333333314"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f4p-zj-3M8">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f4p-zj-3M8" customClass="CalcOperationButton" customModule="Calc" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="64" height="64.333333333333329"/>
                                                         <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                                         <state key="normal" title="*">
@@ -745,7 +774,7 @@
                                                             <action selector="buttenTaped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oPd-K0-0oO"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CaY-Tx-HzW">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CaY-Tx-HzW" customClass="CalcOperationButton" customModule="Calc" customModuleProvider="target">
                                                         <rect key="frame" x="84" y="0.0" width="64.333333333333314" height="64.333333333333329"/>
                                                         <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                                         <state key="normal" title="-">
@@ -760,7 +789,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="IUV-ad-dG0">
                                                 <rect key="frame" x="0.0" y="168.33333333333331" width="148.33333333333334" height="64"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KoY-jo-UuV">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KoY-jo-UuV" customClass="CalcOperationButton" customModule="Calc" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
                                                         <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                                         <state key="normal" title="/">
@@ -770,7 +799,7 @@
                                                             <action selector="buttenTaped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zWJ-P4-xIC"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cjz-tm-Mib">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cjz-tm-Mib" customClass="CalcOperationButton" customModule="Calc" customModuleProvider="target">
                                                         <rect key="frame" x="84" y="0.0" width="64.333333333333314" height="64"/>
                                                         <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                                         <state key="normal" title="%">
@@ -782,7 +811,7 @@
                                                     </button>
                                                 </subviews>
                                             </stackView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mdp-ih-FaT">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mdp-ih-FaT" customClass="CalcOperationButton" customModule="Calc" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="252.33333333333334" width="148.33333333333334" height="64.333333333333343"/>
                                                 <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                                 <state key="normal" title="=">

@@ -26,6 +26,8 @@
 		044EFABC26CC35E0004F64AF /* GeometryDataGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044EFABB26CC35E0004F64AF /* GeometryDataGenerator.swift */; };
 		044FA4CE26BB24C300A6749A /* MetricCalculationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044FA4CD26BB24C300A6749A /* MetricCalculationTableViewController.swift */; };
 		0450D48326E240140055AF93 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0450D48226E240140055AF93 /* Currency.swift */; };
+		0450D49526E4075A0055AF93 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0450D49426E4075A0055AF93 /* Helpers.swift */; };
+		0450D49926EDF0A80055AF93 /* CalcOperetionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0450D49826EDF0A80055AF93 /* CalcOperetionButton.swift */; };
 		046F25B82691D1470016AB04 /* CurrencyConvertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F25B72691D1470016AB04 /* CurrencyConvertViewController.swift */; };
 		047059D726B9B4F100C3B802 /* MetricCalculationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047059D626B9B4F100C3B802 /* MetricCalculationViewController.swift */; };
 		047059DC26B9B9C900C3B802 /* UnitConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047059DB26B9B9C900C3B802 /* UnitConverter.swift */; };
@@ -55,6 +57,8 @@
 		044EFABB26CC35E0004F64AF /* GeometryDataGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryDataGenerator.swift; sourceTree = "<group>"; };
 		044FA4CD26BB24C300A6749A /* MetricCalculationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricCalculationTableViewController.swift; sourceTree = "<group>"; };
 		0450D48226E240140055AF93 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		0450D49426E4075A0055AF93 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		0450D49826EDF0A80055AF93 /* CalcOperetionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcOperetionButton.swift; sourceTree = "<group>"; };
 		046F25B72691D1470016AB04 /* CurrencyConvertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CurrencyConvertViewController.swift; path = /Users/andreyboyko/Desktop/Calc/Calc/CurrencyConvertViewController.swift; sourceTree = "<absolute>"; };
 		047059D626B9B4F100C3B802 /* MetricCalculationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricCalculationViewController.swift; sourceTree = "<group>"; };
 		047059DB26B9B9C900C3B802 /* UnitConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitConverter.swift; sourceTree = "<group>"; };
@@ -98,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				044D791C267DFCBE005DAD70 /* Calc */,
+				0450D49426E4075A0055AF93 /* Helpers.swift */,
 				044D791B267DFCBE005DAD70 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -163,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				044EFAB426CC3219004F64AF /* CalcButton.swift */,
+				0450D49826EDF0A80055AF93 /* CalcOperetionButton.swift */,
 				044AEFAD26A0A17E002CF87B /* NeomorpgButton.swift */,
 			);
 			path = Views;
@@ -287,6 +293,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				044C41F726C19644006CC0AA /* Unit.swift in Sources */,
+				0450D49526E4075A0055AF93 /* Helpers.swift in Sources */,
 				044FA4CE26BB24C300A6749A /* MetricCalculationTableViewController.swift in Sources */,
 				047059D726B9B4F100C3B802 /* MetricCalculationViewController.swift in Sources */,
 				044EFAA526C7C66F004F64AF /* GeometrySelectTableVC.swift in Sources */,
@@ -301,6 +308,7 @@
 				0493D80226B5398600E971FD /* MetricCollectionViewCell.swift in Sources */,
 				044EFAAB26CC1E11004F64AF /* GeometryOperationRowView.swift in Sources */,
 				044EFABC26CC35E0004F64AF /* GeometryDataGenerator.swift in Sources */,
+				0450D49926EDF0A80055AF93 /* CalcOperetionButton.swift in Sources */,
 				044D7920267DFCBE005DAD70 /* SceneDelegate.swift in Sources */,
 				0450D48326E240140055AF93 /* Currency.swift in Sources */,
 				0414A028269CB8F7007A13ED /* CurrencyTableViewController.swift in Sources */,

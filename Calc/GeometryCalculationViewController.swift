@@ -10,6 +10,7 @@ import UIKit
 
 class GeometryCalculationViewController: UIViewController {
     
+    @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var stackView: UIStackView!
     @IBOutlet weak var typeLabel: UILabel!
     @IBOutlet weak var imageFigure: UIImageView!
@@ -18,7 +19,9 @@ class GeometryCalculationViewController: UIViewController {
     @IBOutlet weak var figureLabel: UILabel!
     @IBOutlet weak var textFieldPicker: UITextField!
     @IBOutlet weak var topConstraint: NSLayoutConstraint!
-        var topConstraintConstant: CGFloat?
+    @IBOutlet weak var testTextField: UITextField!
+    //var formula: Formula.nameOfFormula
+    var topConstraintConstant: CGFloat?
     var pikerView = UIPickerView()
     var data = GeometryDataGenerator.shared.createData()
     var selectedFigure: Figure? {
@@ -29,13 +32,14 @@ class GeometryCalculationViewController: UIViewController {
     var selectedFormula: Formula? {
         didSet {
             updateFields()
-            textFieldPicker.text = selectedFormula?.name
+            textFieldPicker.text = selectedFormula?.shotName
         }
     }
     
     var fields: [GeometryOperationRowView] = []
     var pickerRow: String = ""
     
+    //MARK: - Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,6 +52,7 @@ class GeometryCalculationViewController: UIViewController {
         textFieldPicker.inputView = pikerView
         textFieldPicker.textAlignment = .left
         textFieldPicker.placeholder = "Selecte formula"
+        textFieldPicker.underlined()
     }
     
     func updateData() {
@@ -57,7 +62,7 @@ class GeometryCalculationViewController: UIViewController {
         selectedFormula = selectedFigure?.formulas.first
         figureLabel.text = selectedFigure?.name
         
-
+        
     }
     
     func updateFields() {
@@ -76,8 +81,6 @@ class GeometryCalculationViewController: UIViewController {
         }
         fields.forEach { self.stackView.insertArrangedSubview($0, at: 0) }
     }
-    
-    
     
     @IBAction func tapCalculate(_ sender: Any) {
         resultLabel.text = ""
@@ -103,14 +106,15 @@ class GeometryCalculationViewController: UIViewController {
 }
 
 
-
+//MARK: - GeometryCalculationTableViewControllerDelegate
 extension GeometryCalculationViewController: GeometryCalculationTableViewControllerDelegate {
     func geometryCalculation(figure: Figure) {
         selectedFigure = figure
         topConstraint.constant = topConstraintConstant ?? 0
-
+        
     }
 }
+//MARK: - UIPickerViewDelegate
 extension GeometryCalculationViewController: UIPickerViewDataSource, UIPickerViewDelegate {
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -122,10 +126,23 @@ extension GeometryCalculationViewController: UIPickerViewDataSource, UIPickerVie
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return selectedFigure?.formulas[row].name
+//        var formula: String?
+//        if ((selectedFigure?.formulas[row].name.hasSuffix("Area")) != nil) {
+//            formula = String?(Formula.nameOfFormula.Area.rawValue)
+//        }
+//        if ((selectedFigure?.formulas[row].name.hasSuffix("Square")) != nil) {
+//            formula = String?(Formula.nameOfFormula.Square.rawValue)
+//        }
+//        if ((selectedFigure?.formulas[row].name.hasSuffix("Lenght")) != nil) {
+//            formula = String?(Formula.nameOfFormula.Lenght.rawValue)
+//        }
+//        return formula
+        return selectedFigure?.formulas[row].shotName
     }
+    
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         selectedFormula = selectedFigure?.formulas[row]
         textFieldPicker.resignFirstResponder()
     }
 }
+

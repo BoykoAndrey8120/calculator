@@ -21,7 +21,6 @@ class MetricCollectionViewController: UICollectionViewController, UICollectionVi
     override func viewDidLoad() {
         super.viewDidLoad()
         self.collectionView.register(UINib(nibName: "MetricCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: cellCollectionReuseIdentifier)
-//        (MetricCollectionViewCell.self, forCellWithReuseIdentifier: cellCollectionReuseIdentifier)
         createDataDict()
     }
     
@@ -61,8 +60,8 @@ class MetricCollectionViewController: UICollectionViewController, UICollectionVi
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        let height = (collectionView.frame.width) / 3
-        var width = height
+        let height = (collectionView.frame.width) / 2
+        let width = height
         return CGSize(width: width, height: height)
     }
 }
