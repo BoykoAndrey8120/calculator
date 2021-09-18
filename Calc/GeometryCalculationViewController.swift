@@ -20,7 +20,7 @@ class GeometryCalculationViewController: UIViewController {
     @IBOutlet weak var textFieldPicker: UITextField!
     @IBOutlet weak var topConstraint: NSLayoutConstraint!
     @IBOutlet weak var testTextField: UITextField!
-    //var formula: Formula.nameOfFormula
+
     var topConstraintConstant: CGFloat?
     var pikerView = UIPickerView()
     var data = GeometryDataGenerator.shared.createData()
@@ -61,8 +61,9 @@ class GeometryCalculationViewController: UIViewController {
         }
         selectedFormula = selectedFigure?.formulas.first
         figureLabel.text = selectedFigure?.name
-        
-        
+        if topConstraint.constant < 0 {
+            topConstraint.constant += 300
+        }
     }
     
     func updateFields() {
@@ -102,6 +103,7 @@ class GeometryCalculationViewController: UIViewController {
         geometryVC.delegate = self
         geometryVC.geometry = self.data
         self.tabBarController?.present(geometryVC, animated: true, completion: nil)
+        updateData()
     }
 }
 
@@ -126,17 +128,6 @@ extension GeometryCalculationViewController: UIPickerViewDataSource, UIPickerVie
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-//        var formula: String?
-//        if ((selectedFigure?.formulas[row].name.hasSuffix("Area")) != nil) {
-//            formula = String?(Formula.nameOfFormula.Area.rawValue)
-//        }
-//        if ((selectedFigure?.formulas[row].name.hasSuffix("Square")) != nil) {
-//            formula = String?(Formula.nameOfFormula.Square.rawValue)
-//        }
-//        if ((selectedFigure?.formulas[row].name.hasSuffix("Lenght")) != nil) {
-//            formula = String?(Formula.nameOfFormula.Lenght.rawValue)
-//        }
-//        return formula
         return selectedFigure?.formulas[row].shotName
     }
     
