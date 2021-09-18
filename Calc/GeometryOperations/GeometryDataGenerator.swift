@@ -39,8 +39,6 @@ class GeometryDataGenerator {
         //triangle
         let equilateralTriangleAreaFields = [FieldInfo(name: "a", value: 3), FieldInfo(name: "sqrt", value: sqrt(3))]
         let equilateralTriangleAreaFieldsFormula = Formula(name: "equilateralTriangleArea", shotName: "Area", fields: equilateralTriangleAreaFields, formula: "(sqrt/4)*a**2")
-//        let circleLenghtFields = [FieldInfo(name: "r", value: 3), FieldInfo(name: "pi", value: 3.14)]
-//        let circleLenghtFormula = Formula(name: "squarePerimeterFormula", fields: circleLenghtFields, formula: "2*pi*r")
         let triangle = Figure(name: "Triangle", imageName: "triangle", formulas: [equilateralTriangleAreaFieldsFormula])
         
         return [rect,square,circle,triangle]

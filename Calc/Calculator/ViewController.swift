@@ -71,11 +71,6 @@ class ViewController: UIViewController {
     //MARK: - LifeCyvle
     override func viewDidLoad() {
         super.viewDidLoad()
-//        button1.layer.cornerRadius = 15
-//        button1.setTitleColor(.black, for: .normal)
-//        button1.setTitleColor(.red, for: .highlighted)
-//       
-        // Do any additional setup after loading the view.
     }
     
     
@@ -135,8 +130,7 @@ class ViewController: UIViewController {
                 self.expresion = arOperation.getArithmeticExpression(left: expresion ?? .number(0), right: .number(num))
             }
             calculate()
-//            self.expresion = .number(0)
-        // self.operation = text
+
         case "С":
             inputLebel.text = "0"
             leftNumber = "0"

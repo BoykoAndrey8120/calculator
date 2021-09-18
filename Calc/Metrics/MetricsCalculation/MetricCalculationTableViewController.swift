@@ -42,10 +42,6 @@ class MetricCalculationTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         guard let cell = tableView.dequeueReusableCell(withIdentifier: cellId) else { return UITableViewCell() }
-//        indexPath.row
-//        indexPath.section
-//        indexPath.item
-//        cell.textLabel?.text = String(indexPath.row)
         cell.textLabel?.text = metrics[indexPath.row]
         return cell
     }

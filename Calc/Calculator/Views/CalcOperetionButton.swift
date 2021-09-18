@@ -17,7 +17,6 @@ class CalcOperationButton: UIButton {
         layer.cornerRadius = min(self.frame.height, self.frame.width) / 5
         layer.shadowRadius = 2
         layer.shadowOffset = CGSize(width: 4, height: 4)
-//        layer.shadowPath = CGPath(rect: self.frame, transform: nil)
         layer.shadowOpacity = 0.1
        
     }

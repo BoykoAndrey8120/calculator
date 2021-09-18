@@ -17,7 +17,6 @@ class CalcButton: UIButton {
         layer.shadowRadius = 2
         layer.shadowColor = UIColor.black.cgColor
         layer.shadowOffset = CGSize(width: 4, height: 4)
-       // layer.shadowPath = CGPath(rect: self.frame, transform: nil)
         layer.shadowOpacity = 0.1
     }
 }

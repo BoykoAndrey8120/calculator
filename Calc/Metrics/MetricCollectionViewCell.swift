@@ -10,7 +10,6 @@ import UIKit
 
 class MetricCollectionViewCell: UICollectionViewCell {
     
-//    @IBOutlet weak var backgroundViewCust: UIView!
     @IBOutlet weak var titleMetric: UILabel!
     @IBOutlet weak var metricView: UIImageView!
     

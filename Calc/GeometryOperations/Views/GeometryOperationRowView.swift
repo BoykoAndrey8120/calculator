@@ -19,13 +19,6 @@ class GeometryOperationRowView: UIView {
         textField.text = String(fieldInfo.value)
         textField.keyboardType = .numberPad
     }
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
-    }
-    */
     
     func prepareData() {
         setFieldInfoValue(with: textField.text)

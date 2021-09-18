@@ -41,10 +41,6 @@ class CurrencyTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         guard let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier) else { return UITableViewCell() }
-//        indexPath.row
-//        indexPath.section
-//        indexPath.item
-//        cell.textLabel?.text = String(indexPath.row)
         cell.textLabel?.text = isoCurrencyCodes[indexPath.row]
         return cell
     }

@@ -15,7 +15,6 @@ class MetricCalculationViewController: UIViewController, UITextFieldDelegate {
     
     var metricType = ""
     var calculationType: CalculationType?
-    //    var unitType: ToBaseConvertable.Type
     var tapdLabel: UILabel?
     @IBOutlet weak var secondTextField: UITextField!
     @IBOutlet weak var firstLabel: UILabel!
@@ -135,15 +134,6 @@ class MetricCalculationViewController: UIViewController, UITextFieldDelegate {
     
 }
 }
-/*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
         extension MetricCalculationViewController: MetricCalculationTableViewControllerDelegate {
             func metricCalculation(metric: String) {
                 print(metric)

@@ -21,7 +21,7 @@ class GeometrySelectTableVC: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        geometry = FigureEnum.allCases.map({$0.rawValue})
+
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: geometryCellId)
         print("cells - \(geometry)")
     }
