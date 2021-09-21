@@ -803,7 +803,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="IUV-ad-dG0">
                                                 <rect key="frame" x="0.0" y="168.33333333333331" width="148.33333333333334" height="64"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KoY-jo-UuV" customClass="CalcButton" customModule="Calc" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KoY-jo-UuV" customClass="CalcOperationButton" customModule="Calc" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
                                                         <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                                         <state key="normal" title="/">
@@ -813,7 +813,7 @@
                                                             <action selector="buttenTaped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zWJ-P4-xIC"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cjz-tm-Mib" customClass="CalcButton" customModule="Calc" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cjz-tm-Mib" customClass="CalcOperationButton" customModule="Calc" customModuleProvider="target">
                                                         <rect key="frame" x="84" y="0.0" width="64.333333333333314" height="64"/>
                                                         <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                                         <state key="normal" title="%">
@@ -825,7 +825,7 @@
                                                     </button>
                                                 </subviews>
                                             </stackView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mdp-ih-FaT" customClass="CalcButton" customModule="Calc" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mdp-ih-FaT" customClass="CalcOperationButton" customModule="Calc" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="252.33333333333334" width="148.33333333333334" height="64.333333333333343"/>
                                                 <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                                 <state key="normal" title="=">
