@@ -28,7 +28,7 @@
 		0450D48326E240140055AF93 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0450D48226E240140055AF93 /* Currency.swift */; };
 		0450D49526E4075A0055AF93 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0450D49426E4075A0055AF93 /* Helpers.swift */; };
 		0450D49926EDF0A80055AF93 /* CalcOperetionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0450D49826EDF0A80055AF93 /* CalcOperetionButton.swift */; };
-		046F25B82691D1470016AB04 /* CurrencyConvertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F25B72691D1470016AB04 /* CurrencyConvertViewController.swift */; };
+		045564C227256CC90045451D /* CurrencyConvertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045564C127256CC90045451D /* CurrencyConvertViewController.swift */; };
 		047059D726B9B4F100C3B802 /* MetricCalculationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047059D626B9B4F100C3B802 /* MetricCalculationViewController.swift */; };
 		047059DC26B9B9C900C3B802 /* UnitConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047059DB26B9B9C900C3B802 /* UnitConverter.swift */; };
 		0493D7FC26B5314B00E971FD /* MetricCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0493D7FB26B5314B00E971FD /* MetricCollectionViewController.swift */; };
@@ -59,7 +59,7 @@
 		0450D48226E240140055AF93 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		0450D49426E4075A0055AF93 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		0450D49826EDF0A80055AF93 /* CalcOperetionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcOperetionButton.swift; sourceTree = "<group>"; };
-		046F25B72691D1470016AB04 /* CurrencyConvertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CurrencyConvertViewController.swift; path = /Users/andreyboyko/Desktop/Calc/Calc/CurrencyConvertViewController.swift; sourceTree = "<absolute>"; };
+		045564C127256CC90045451D /* CurrencyConvertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyConvertViewController.swift; sourceTree = "<group>"; };
 		047059D626B9B4F100C3B802 /* MetricCalculationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricCalculationViewController.swift; sourceTree = "<group>"; };
 		047059DB26B9B9C900C3B802 /* UnitConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitConverter.swift; sourceTree = "<group>"; };
 		0493D7FB26B5314B00E971FD /* MetricCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricCollectionViewController.swift; sourceTree = "<group>"; };
@@ -140,7 +140,7 @@
 		044EFAB026CC31DD004F64AF /* Currency */ = {
 			isa = PBXGroup;
 			children = (
-				046F25B72691D1470016AB04 /* CurrencyConvertViewController.swift */,
+				045564C127256CC90045451D /* CurrencyConvertViewController.swift */,
 				0414A027269CB8F7007A13ED /* CurrencyTableViewController.swift */,
 				0450D48526E2401A0055AF93 /* Models */,
 			);
@@ -303,9 +303,9 @@
 				047059DC26B9B9C900C3B802 /* UnitConverter.swift in Sources */,
 				044D7922267DFCBE005DAD70 /* ViewController.swift in Sources */,
 				044C420326C1ABCF006CC0AA /* Figure.swift in Sources */,
-				046F25B82691D1470016AB04 /* CurrencyConvertViewController.swift in Sources */,
 				044D791E267DFCBE005DAD70 /* AppDelegate.swift in Sources */,
 				0493D80226B5398600E971FD /* MetricCollectionViewCell.swift in Sources */,
+				045564C227256CC90045451D /* CurrencyConvertViewController.swift in Sources */,
 				044EFAAB26CC1E11004F64AF /* GeometryOperationRowView.swift in Sources */,
 				044EFABC26CC35E0004F64AF /* GeometryDataGenerator.swift in Sources */,
 				0450D49926EDF0A80055AF93 /* CalcOperetionButton.swift in Sources */,
